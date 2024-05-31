@@ -4,6 +4,7 @@
 @use 'plans';
 @use 'available-devices';
 @use 'faq';
+@use 'footer';
 
 @font-face {
     font-family: "Avenir";
@@ -119,6 +120,31 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: center;
+        }
+    }
+}
+
+.language-selector {
+    display: flex;
+    align-items: center;
+
+    img {
+        height: 18px;
+        width: 18px;
+    }
+
+    select {
+        background-color: transparent;
+        border: none;
+        color: variaveis.$corTextoPrincipal;
+        height: 38px;
+
+        &:hover {
+            color: variaveis.$corTextoSecundario;
+        }
+
+        option {
+            color: variaveis.$corDeFundo;
         }
     }
 }
